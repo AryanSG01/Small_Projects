@@ -18,7 +18,7 @@ logger.addHandler(file_handler)
 # Function to log important events
 def log_event(message):
     logger.info(message)
-
+    
 # Function to log errors
 def log_error(message):
     logger.error(message)
