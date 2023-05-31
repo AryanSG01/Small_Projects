@@ -13,7 +13,7 @@ def register_user():
     password = password_entry.get()
     email = email_entry.get()
     name = name_entry.get()
-
+    
     # Validate password
     if not password_management.is_password_valid(password):
         messagebox.showerror("Error", "Invalid password. Password must meet the complexity requirements.")
