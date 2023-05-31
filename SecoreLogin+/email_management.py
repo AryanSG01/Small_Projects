@@ -26,7 +26,7 @@ def send_password_reset_email(email, new_password):
     server = smtplib.SMTP(SMTP_SERVER, SMTP_PORT)
     server.starttls()
     server.login(SMTP_USERNAME, SMTP_PASSWORD)
-
+    
     # Send the email
     server.send_message(message)
 
