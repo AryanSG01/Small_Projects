@@ -45,7 +45,7 @@ def is_password_valid(password):
 
     if COMPLEXITY_REQUIREMENTS["digits"] and not any(char.isdigit() for char in password):
         return False
-
+   
     if COMPLEXITY_REQUIREMENTS["special_chars"] and not any(char in string.punctuation for char in password):
         return False
 
